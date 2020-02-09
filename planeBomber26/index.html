@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>plane Bomber</title>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .gameMessage {
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      width: 60%;
+      text-align: center;
+      background-color: aliceblue;
+      font-size: 2em;
+
+    }
+
+    .plane {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 80px;
+      height: 40px;
+      background-image: url(plane.png);
+      background-size: cover;
+    }
+
+    .score {
+      background-color: black;
+      height: 85px;
+      text-align: center;
+      color: white;
+      font-size: 1.5em;
+      font-family: fantasy;
+    }
+
+    .base {
+      position: absolute;
+      bottom: 0px;
+      width: 50px;
+      height: 100px;
+      color: white;
+      background-color: black;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .bomb {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      color: white;
+      background-color: black;
+      text-align: center;
+      font-size: 2em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <span class="gameMessage">
+    Press here to Start Game
+  </span>
+  <div class="score">0</div>
+  <div class="game">
+    <div class="gameArea"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
